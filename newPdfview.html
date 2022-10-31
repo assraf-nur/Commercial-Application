@@ -1,967 +1,1034 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Commercial Application</title>
 
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Commercial Application</title>
 
-    <style>
-      body {
-        font-family: "Arial";
-        color: #1d1d1d;
-      }
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
 
-      .main-body {
-        width: 93%;
-        margin: 0 auto;
-        padding-bottom: 130px;
-      }
+  <style>
+    body {
+      font-family: "Arial";
+      color: #1d1d1d;
+    }
 
-      .color-line1 {
-        margin-top: 2px;
-        height: 20px;
-        background-color: #006e3a;
-        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
-      }
+    .main-body {
+      width: 93%;
+      margin: 0 auto;
+      padding-bottom: 130px;
+    }
 
-      .color-line2 {
-        margin-top: 2px;
-        margin-left: -18px;
-        height: 20px;
-        background-color: #5b9870;
-        clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
-      }
+    .color-line1 {
+      margin-top: 2px;
+      height: 20px;
+      background-color: #006e3a;
+      clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    }
 
-      .color-line3 {
-        margin-top: 2px;
-        margin-left: -18px;
-        height: 20px;
-        background-color: #8fbe96;
-        clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
-      }
+    .color-line2 {
+      margin-top: 2px;
+      margin-left: -18px;
+      height: 20px;
+      background-color: #5b9870;
+      clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
+    }
 
-      table {
-        border-collapse: collapse;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-      }
+    .color-line3 {
+      margin-top: 2px;
+      margin-left: -18px;
+      height: 20px;
+      background-color: #8fbe96;
+      clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
+    }
 
-      td {
-        border: 1px solid #2d2d2d;
-        font-size: 14px;
-        padding-left: 5px;
-        font-weight: 500;
-        padding-top: 5px;
-      }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
 
-      .table-head {
-        padding-left: 5px !important;
-        background-color: #e5e5e5;
-        border: 1px solid #e5e5e5 !important;
-      }
-    </style>
-  </head>
+    td {
+      border: 1px solid #2d2d2d;
+      font-size: 14px;
+      padding-left: 5px;
+      font-weight: 500;
+      padding-top: 5px;
+    }
 
-  <body>
-    <section class="main-body">
-      <div class="mt-4" style="clear: both">
-        <div style="width: 250px; float: left">
-          <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
-        </div>
-        <div style="float: right">
-          <p class="fw-bold text-end mt-2"><i>Page 1 of 4</i></p>
-          <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">Commercial Loan Request</h1>
-        </div>
-        <div style="clear: both"></div>
+    .table-head {
+      padding-left: 5px !important;
+      background-color: #e5e5e5;
+      border: 1px solid #e5e5e5 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="main-body">
+    <div class="mt-4" style="clear: both">
+      <div style="width: 250px; float: left">
+        <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
       </div>
-      <div class="w-100 p-1 bg-black"></div>
-      <div class="mt-2">
-        <div class="row">
-          <h4 class="fw-bold col-sm-4">PERSONAL INFORMATION</h4>
-          <div class="row col-sm-8">
-            <div class="col-md-9 color-line1"></div>
-            <div class="col-md color-line2"></div>
-            <div class="col-md color-line3"></div>
-          </div>
-        </div>
+      <div style="float: right">
+        <p class="fw-bold text-end mt-2"><i>Page 1 of 4</i></p>
+        <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">
+          Commercial Loan Request
+        </h1>
       </div>
-
-      <div class="row mt-1">
-        <div class="col-sm">
-          <table class="w-100">
-            <thead>
-              <tr class="table-head">
-                <th class="w-50 py-1 ps-2">Borrower’s</th>
-                <th class="w-50"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Borrower’s Name</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>DOB (mm/dd/yyyy)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Social Security Number</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Home Phone (incl. area code)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>E-Mail Address</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Cell Phone (incl. area code)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="d-flex">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault"> Married </label>
-                    </div>
-                    <div class="form-check ms-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked"> Separated </label>
-                    </div>
-                    <div class="form-check ms-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked2">
-                        Unmarried (include single, divorced, widowed)
-                      </label>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <p class="mt-2">Present Address (street, city, state, zip)</p>
-                  <div class="mt-3 mb-0 d-flex">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault"> Married </label>
-                    </div>
-                    <div class="form-check ms-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked"> Separated </label>
-                    </div>
-                    <div class="ms-5">
-                      <p style="margin-top: 0.5px">$......... Per Mo.......... No. Yrs.</p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm">
-          <table class="w-100">
-            <thead>
-              <tr class="table-head">
-                <th class="w-50 py-1 ps-2">Co-Borrower’s</th>
-                <th class="w-50"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Borrower’s Name</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>DOB (mm/dd/yyyy)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Social Security Number</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Home Phone (incl. area code)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>E-Mail Address</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Cell Phone (incl. area code)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <div class="d-flex">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault"> Married </label>
-                    </div>
-                    <div class="form-check ms-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked"> Separated </label>
-                    </div>
-                    <div class="form-check ms-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked2">
-                        Unmarried (include single, divorced, widowed)
-                      </label>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <p class="mt-2">Present Address (street, city, state, zip)</p>
-                  <div class="mt-3 mb-0 d-flex">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault"> Married </label>
-                    </div>
-                    <div class="form-check ms-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked"> Separated </label>
-                    </div>
-                    <div class="ms-5">
-                      <p style="margin-top: 0.5px">$......... Per Mo.......... No. Yrs.</p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="py-2">
-        <i>If residing at present address for less than seven (7) years, complete the following:</i>
-      </div>
+      <div style="clear: both"></div>
+    </div>
+    <div class="w-100 p-1 bg-black"></div>
+    <div class="mt-2">
       <div class="row">
-        <div class="col-md">
-          <table>
-            <thead></thead>
-            <tbody>
-              <tr>
-                <td colspan="2">
-                  <p>Former Address (street, city, state, zip)</p>
-
-                  <div class="d-flex">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulto" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefaulto"> Own </label>
-                    </div>
-                    <div class="form-check ms-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedr" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckCheckedr"> Rent </label>
-                    </div>
-                    <div class="ms-5">
-                      <p style="margin-top: 0.5px">$......... Per Mo.......... No. Yrs.</p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-md">
-          <table>
-            <thead></thead>
-            <tbody>
-              <tr>
-                <td colspan="2">
-                  <p>Former Address (street, city, state, zip)</p>
-
-                  <div class="d-flex">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulto" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefaulto"> Own </label>
-                    </div>
-                    <div class="form-check ms-3">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedr" />
-                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckCheckedr"> Rent </label>
-                    </div>
-                    <div class="ms-5">
-                      <p style="margin-top: 0.5px">$......... Per Mo.......... No. Yrs.</p>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <h4 class="fw-bold col-sm-4">PERSONAL INFORMATION</h4>
+        <div class="row col-sm-8">
+          <div class="col-md-9 color-line1"></div>
+          <div class="col-md color-line2"></div>
+          <div class="col-md color-line3"></div>
         </div>
       </div>
+    </div>
 
-      <div class="mt-3">
-        <div class="row">
-          <h4 class="fw-bold col-sm-2">RESUME</h4>
-          <div class="row col-sm-10">
-            <div class="col-md-9 color-line1"></div>
-            <div class="col-md color-line2"></div>
-            <div class="col-md color-line3"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm">
-          <table class="w-100">
-            <thead>
-              <tr class="table-head">
-                <th class="w-50 py-1 ps-2">Borrower’s</th>
-                <th class="w-50"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Name and Address of Employer</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Title/Position</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Type of Business</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Business Phone (incl. area code)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Years on this job</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Years in Profession</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm">
-          <table class="w-100">
-            <thead>
-              <tr class="table-head">
-                <th class="w-50 py-1 ps-2">Co-Borrower’s</th>
-                <th class="w-50"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Name and Address of Employer</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Title/Position</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Type of Business</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Business Phone (incl. area code)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Years on this job</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Years in Profession</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="py-2">
-        <i>If employed in current position for less than two (2) years, complete the following:</i>
-      </div>
-
-      <div class="row">
-        <div class="col-sm">
-          <table class="w-100">
-            <thead>
-              <tr>
-                <th class="w-50"></th>
-                <th class="w-50"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Name and Address of Employer</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Title/Position</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Type of Business</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Business Phone (incl. area code)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Dates (from-to)</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-sm">
-          <table class="w-100">
-            <thead>
-              <tr>
-                <th class="w-50"></th>
-                <th class="w-50"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Name and Address of Employer</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Title/Position</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Type of Business</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Business Phone (incl. area code)</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Dates (from-to)</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div class="mt-3">
-        <div class="row">
-          <h4 class="fw-bold col-sm-5">PERSONAL INCOME SOURCES</h4>
-          <div class="row col-sm-7">
-            <div class="col-md-9 color-line1"></div>
-            <div class="col-md color-line2"></div>
-            <div class="col-md color-line3"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-1">
+    <div class="row mt-1">
+      <div class="col-sm">
         <table class="w-100">
           <thead>
             <tr class="table-head">
-              <th class="w-50 py-1 ps-2">Source</th>
-              <th class="w-25 py-1 ps-2">MONTHLY</th>
-              <th class="w-25 py-1 ps-2">ANNUALLY</th>
+              <th class="w-50 py-1 ps-2">Borrower’s</th>
+              <th class="w-50"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Borrower and Co-Borrower Gross Salary</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Schedule B (Recruiting Interest and Dividends)</td>
-              <td></td>
+              <td>Borrower’s Name</td>
               <td></td>
             </tr>
             <tr>
-              <td>Schedule C (Net Profit of Proprietorships)</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Schedule D (Recurring Capital Gains Less Losses)</td>
-              <td></td>
+              <td>DOB (mm/dd/yyyy)</td>
               <td></td>
             </tr>
             <tr>
-              <td>Schedule E (Recurring Rental Income Exluding Subject Property)</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Other (List)</td>
-              <td></td>
+              <td>Social Security Number</td>
               <td></td>
             </tr>
             <tr>
-              <td style="background-color: #8fbe96">TOTAL PERSONAL INCOME</td>
-              <td style="background-color: #8fbe96"></td>
-              <td style="background-color: #8fbe96"></td>
+              <td>Home Phone (incl. area code)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>E-Mail Address</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Cell Phone (incl. area code)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div class="d-flex">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault">
+                      Married
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked">
+                      Separated
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked2">
+                      Unmarried (include single, divorced, widowed)
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p class="mt-2">Present Address (street, city, state, zip)</p>
+                <div class="mt-3 mb-0 d-flex">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault">
+                      Married
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked">
+                      Separated
+                    </label>
+                  </div>
+                  <div class="ms-5">
+                    <p style="margin-top: 0.5px">
+                      $......... Per Mo.......... No. Yrs.
+                    </p>
+                  </div>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
+      <div class="col-sm">
+        <table class="w-100">
+          <thead>
+            <tr class="table-head">
+              <th class="w-50 py-1 ps-2">Co-Borrower’s</th>
+              <th class="w-50"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Borrower’s Name</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>DOB (mm/dd/yyyy)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Social Security Number</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Home Phone (incl. area code)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>E-Mail Address</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Cell Phone (incl. area code)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <div class="d-flex">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault">
+                      Married
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked">
+                      Separated
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked2">
+                      Unmarried (include single, divorced, widowed)
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p class="mt-2">Present Address (street, city, state, zip)</p>
+                <div class="mt-3 mb-0 d-flex">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault">
+                      Married
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked">
+                      Separated
+                    </label>
+                  </div>
+                  <div class="ms-5">
+                    <p style="margin-top: 0.5px">
+                      $......... Per Mo.......... No. Yrs.
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="py-2">
+      <i>If residing at present address for less than seven (7) years,
+        complete the following:</i>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <table>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <p>Former Address (street, city, state, zip)</p>
 
-      <div class="mt-3">
-        <div class="row">
-          <h4 class="fw-bold col-sm-3">DECLARATIONS</h4>
-          <div class="row col-sm-9">
-            <div class="col-md-9 color-line1"></div>
-            <div class="col-md color-line2"></div>
-            <div class="col-md color-line3"></div>
-          </div>
+                <div class="d-flex">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulto" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefaulto">
+                      Own
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedr" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckCheckedr">
+                      Rent
+                    </label>
+                  </div>
+                  <div class="ms-5">
+                    <p style="margin-top: 0.5px">
+                      $......... Per Mo.......... No. Yrs.
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md">
+        <table>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td colspan="2">
+                <p>Former Address (street, city, state, zip)</p>
+
+                <div class="d-flex">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulto" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefaulto">
+                      Own
+                    </label>
+                  </div>
+                  <div class="form-check ms-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedr" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckCheckedr">
+                      Rent
+                    </label>
+                  </div>
+                  <div class="ms-5">
+                    <p style="margin-top: 0.5px">
+                      $......... Per Mo.......... No. Yrs.
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="mt-3">
+      <div class="row">
+        <h4 class="fw-bold col-sm-2">RESUME</h4>
+        <div class="row col-sm-10">
+          <div class="col-md-9 color-line1"></div>
+          <div class="col-md color-line2"></div>
+          <div class="col-md color-line3"></div>
         </div>
       </div>
+    </div>
 
-      <div class="mt-1">
-        <p class="text-center mt-0" style="font-size: 14px">
-          If you answer “yes” to any questions 1 through 6, use Continuation Sheet for explanations.
-        </p>
-        <table>
+    <div class="row">
+      <div class="col-sm">
+        <table class="w-100">
+          <thead>
+            <tr class="table-head">
+              <th class="w-50 py-1 ps-2">Borrower’s</th>
+              <th class="w-50"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name and Address of Employer</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Title/Position</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Type of Business</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Business Phone (incl. area code)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Years on this job</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Years in Profession</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm">
+        <table class="w-100">
+          <thead>
+            <tr class="table-head">
+              <th class="w-50 py-1 ps-2">Co-Borrower’s</th>
+              <th class="w-50"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name and Address of Employer</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Title/Position</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Type of Business</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Business Phone (incl. area code)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Years on this job</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Years in Profession</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="py-2">
+      <i>If employed in current position for less than two (2) years, complete
+        the following:</i>
+    </div>
+
+    <div class="row">
+      <div class="col-sm">
+        <table class="w-100">
           <thead>
             <tr>
-              <th width="40px"></th>
-              <th width="40px"></th>
-              <th></th>
-              <th width="40px"></th>
-              <th width="40px"></th>
+              <th class="w-50"></th>
+              <th class="w-50"></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="text-center">YES</td>
-              <td class="text-center">NO</td>
+              <td>Name and Address of Employer</td>
               <td></td>
-              <td class="text-center">YES</td>
-              <td class="text-center">NO</td>
             </tr>
             <tr>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>1. Are there any outstanding judgements against you?</td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
+              <td>Title/Position</td>
+              <td></td>
             </tr>
             <tr>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>2. Have you been declared bankrupt in the last 10 years?</td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
+              <td>Type of Business</td>
+              <td></td>
             </tr>
             <tr>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>3. Have you had property forclosed upon or given title or deed in lieu?</td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
+              <td>Business Phone (incl. area code)</td>
+              <td></td>
             </tr>
             <tr>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>4. Are you a party to a lawsuit?</td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>5. Are you obligated to pay alimony, child support, or separate maintenance?</td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>6. Are any of your assets held in a trust?</td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>7. Are you a U.S. citizen?</td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>8. Are you a permanent resident alien? If yes please provide a copy of resident alien ID card.</td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
-              <td>
-                <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
-              </td>
+              <td>Dates (from-to)</td>
+              <td></td>
             </tr>
           </tbody>
         </table>
       </div>
+      <div class="col-sm">
+        <table class="w-100">
+          <thead>
+            <tr>
+              <th class="w-50"></th>
+              <th class="w-50"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name and Address of Employer</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Title/Position</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Type of Business</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Business Phone (incl. area code)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Dates (from-to)</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-      <div class="mt-4">
-        <h6 class="fw-bold">Borrower________________</h6>
-        <h6 class="fw-bold">Co-Borrower_____________</h6>
-      </div>
-
-      <div class="mt-4" style="clear: both">
-        <div style="width: 250px; float: left">
-          <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
-        </div>
-        <div style="float: right">
-          <p class="fw-bold text-end mt-2"><i>Page 2 of 4</i></p>
-          <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">Commercial Loan Request</h1>
-        </div>
-        <div style="clear: both"></div>
-      </div>
-      <div class="w-100 p-1 bg-black"></div>
-      <div class="mt-2">
-        <div class="row">
-          <h4 class="fw-bold col-sm-4">ASSETS AND LIABILITIES</h4>
-          <div class="row col-sm-8">
-            <div class="col-md-9 color-line1"></div>
-            <div class="col-md color-line2"></div>
-            <div class="col-md color-line3"></div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <p style="line-height: 20px; font-size: 14px">
-          This Statement and any applicable supporting schedules may be completed jointly by both married and unmarried Co-Borrowers if their assets
-          and liabilities are sufficiently joined so that the Statement can be meaningfully and fairly presented on a combined basis; otherwise,
-          separate Statements and Schedules are required. If the Co-Borrower section was completed about a non-applicant spouce or other person, this
-          Statement and supporting schedules must be completed by that spouce or other person also.
-        </p>
-      </div>
-
-      <div class="">
-        <div class="d-flex justify-content-end">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="Completed" />
-            <label style="margin-top: 0.5px" class="form-check-label" for="Completed"> Completed </label>
-          </div>
-          <div class="form-check ms-3">
-            <input class="form-check-input" type="checkbox" value="" id="Jointly" />
-            <label style="margin-top: 0.5px" class="form-check-label" for="Jointly"> Jointly </label>
-          </div>
-          <div class="ms-3">
-            <input class="form-check-input" type="checkbox" value="" id="NotJointly" />
-            <label style="margin-top: 0.5px" class="form-check-label" for="NotJointly"> Not Jointly </label>
-          </div>
+    <div class="mt-3">
+      <div class="row">
+        <h4 class="fw-bold col-sm-5">PERSONAL INCOME SOURCES</h4>
+        <div class="row col-sm-7">
+          <div class="col-md-9 color-line1"></div>
+          <div class="col-md color-line2"></div>
+          <div class="col-md color-line3"></div>
         </div>
       </div>
+    </div>
 
-      <div style="height: 2px" class="w-100 bg-dark"></div>
+    <div class="mt-1">
+      <table class="w-100">
+        <thead>
+          <tr class="table-head">
+            <th class="w-50 py-1 ps-2">Source</th>
+            <th class="w-25 py-1 ps-2">MONTHLY</th>
+            <th class="w-25 py-1 ps-2">ANNUALLY</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Borrower and Co-Borrower Gross Salary</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schedule B (Recruiting Interest and Dividends)</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schedule C (Net Profit of Proprietorships)</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Schedule D (Recurring Capital Gains Less Losses)</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              Schedule E (Recurring Rental Income Exluding Subject Property)
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Other (List)</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td style="background-color: #8fbe96">TOTAL PERSONAL INCOME</td>
+            <td style="background-color: #8fbe96"></td>
+            <td style="background-color: #8fbe96"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-      <div class="row mt-3">
-        <div class="col-sm-5">
+    <div class="mt-3">
+      <div class="row">
+        <h4 class="fw-bold col-sm-3">DECLARATIONS</h4>
+        <div class="row col-sm-9">
+          <div class="col-md-9 color-line1"></div>
+          <div class="col-md color-line2"></div>
+          <div class="col-md color-line3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-1">
+      <p class="text-center mt-0" style="font-size: 14px">
+        If you answer “yes” to any questions 1 through 6, use Continuation
+        Sheet for explanations.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th width="40px"></th>
+            <th width="40px"></th>
+            <th></th>
+            <th width="40px"></th>
+            <th width="40px"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center">YES</td>
+            <td class="text-center">NO</td>
+            <td></td>
+            <td class="text-center">YES</td>
+            <td class="text-center">NO</td>
+          </tr>
+          <tr>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>1. Are there any outstanding judgements against you?</td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>2. Have you been declared bankrupt in the last 10 years?</td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              3. Have you had property forclosed upon or given title or deed
+              in lieu?
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>4. Are you a party to a lawsuit?</td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              5. Are you obligated to pay alimony, child support, or separate
+              maintenance?
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>6. Are any of your assets held in a trust?</td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>7. Are you a U.S. citizen?</td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              8. Are you a permanent resident alien? If yes please provide a
+              copy of resident alien ID card.
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+            <td>
+              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-4">
+      <h6 class="fw-bold">Borrower________________</h6>
+      <h6 class="fw-bold">Co-Borrower_____________</h6>
+    </div>
+
+    <div class="mt-4" style="clear: both">
+      <div style="width: 250px; float: left">
+        <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
+      </div>
+      <div style="float: right">
+        <p class="fw-bold text-end mt-2"><i>Page 2 of 4</i></p>
+        <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">
+          Commercial Loan Request
+        </h1>
+      </div>
+      <div style="clear: both"></div>
+    </div>
+    <div class="w-100 p-1 bg-black"></div>
+    <div class="mt-2">
+      <div class="row">
+        <h4 class="fw-bold col-sm-4">ASSETS AND LIABILITIES</h4>
+        <div class="row col-sm-8">
+          <div class="col-md-9 color-line1"></div>
+          <div class="col-md color-line2"></div>
+          <div class="col-md color-line3"></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style="line-height: 20px; font-size: 14px">
+        This Statement and any applicable supporting schedules may be
+        completed jointly by both married and unmarried Co-Borrowers if their
+        assets and liabilities are sufficiently joined so that the Statement
+        can be meaningfully and fairly presented on a combined basis;
+        otherwise, separate Statements and Schedules are required. If the
+        Co-Borrower section was completed about a non-applicant spouce or
+        other person, this Statement and supporting schedules must be
+        completed by that spouce or other person also.
+      </p>
+    </div>
+
+    <div class="">
+      <div class="d-flex justify-content-end">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="Completed" />
+          <label style="margin-top: 0.5px" class="form-check-label" for="Completed">
+            Completed
+          </label>
+        </div>
+        <div class="form-check ms-3">
+          <input class="form-check-input" type="checkbox" value="" id="Jointly" />
+          <label style="margin-top: 0.5px" class="form-check-label" for="Jointly">
+            Jointly
+          </label>
+        </div>
+        <div class="ms-3">
+          <input class="form-check-input" type="checkbox" value="" id="NotJointly" />
+          <label style="margin-top: 0.5px" class="form-check-label" for="NotJointly">
+            Not Jointly
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 2px" class="w-100 bg-dark"></div>
+
+    <div class="row mt-3">
+      <div class="col-sm-5">
+        <table>
+          <thead class="table-head">
+            <tr>
+              <th class="w-50">ASSETS</th>
+              <th class="w-50">Cash or Market Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Cash deposit toward purchase held by:
+                <p class="mt-4"></p>
+              </td>
+              <td>$</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="font-size: 14px" class="py-2">
+          <i class="fw-bold">List checking and savings accounts below</i>
+        </div>
+
+        <div>
           <table>
-            <thead class="table-head">
+            <thead>
               <tr>
-                <th class="w-50">ASSETS</th>
-                <th class="w-50">Cash or Market Value</th>
+                <td colspan="3">
+                  Name and address of Bank, S&L, or Credit Union <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                </td>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>
-                  Cash deposit toward purchase held by:
-                  <p class="mt-4"></p>
-                </td>
-                <td>$</td>
+                <td class="w-50">Acct. no.</td>
+                <td class="w-50">$</td>
               </tr>
             </tbody>
           </table>
-
-          <div style="font-size: 14px" class="py-2">
-            <i class="fw-bold">List checking and savings accounts below</i>
-          </div>
-
-          <div>
-            <table>
-              <thead>
-                <tr>
-                  <td colspan="3">
-                    Name and address of Bank, S&L, or Credit Union <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                  </td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="w-50">Acct. no.</td>
-                  <td class="w-50">$</td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="mt-1">
-              <thead>
-                <tr>
-                  <td colspan="3">
-                    Name and address of Bank, S&L, or Credit Union <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                  </td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="w-50">Acct. no.</td>
-                  <td class="w-50">$</td>
-                </tr>
-              </tbody>
-            </table>
-            <table class="mt-1">
-              <thead>
-                <tr>
-                  <td colspan="3">
-                    Name and address of Bank, S&L, or Credit Union <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                  </td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="w-50">Acct. no.</td>
-                  <td class="w-50">$</td>
-                </tr>
-              </tbody>
-            </table>
-            <table style="margin-top: 1px">
-              <thead></thead>
-              <tbody>
-                <tr>
-                  <td class="w-50">
-                    Stocks & Bonds (Company name/number description) <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                  </td>
-                  <td class="w-50"></td>
-                </tr>
-                <tr>
-                  <td>
-                    Life insurance net cash value
-                    <br />
-                    Face amount: $
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td class="fw-bold">Subtotal Liquid Assets</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Real Estate owned (enter market value from schedule of real estate owned)</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>Vested interest in retirement fund</td>
-                  <td>$</td>
-                </tr>
-                <tr>
-                  <td>
-                    Net worth of business(es) owned (attach financial statement)
-                    <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                    <br />
-                    <br />
-                    <span></span>
-                    <br />
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>
-                    Automobiles owned (make & yr.)
-                    <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                    <br />
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>
-                    Other Assets (itemize)
-                    <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                    <br />
-                    <span></span>
-                    <br />
-                  </td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td style="background-color: #e5e5e5" class="fw-bold py-3">Total Assets a.</td>
-                  <td style="background-color: #e5e5e5" class="fw-bold">$</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="col-sm-7 p-0">
-          <table>
+          <table class="mt-1">
+            <thead>
+              <tr>
+                <td colspan="3">
+                  Name and address of Bank, S&L, or Credit Union <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="w-50">Acct. no.</td>
+                <td class="w-50">$</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="mt-1">
+            <thead>
+              <tr>
+                <td colspan="3">
+                  Name and address of Bank, S&L, or Credit Union <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="w-50">Acct. no.</td>
+                <td class="w-50">$</td>
+              </tr>
+            </tbody>
+          </table>
+          <table style="margin-top: 1px">
             <thead></thead>
             <tbody>
               <tr>
-                <td>
-                  <p style="font-size: 14px; line-height: 15px">
-                    Liabilities and Pledged Assets. List the creditor’s name, address and account number for all outstanding debts, including
-                    automobile loans, revolving charge accounts, real estate loans, alimony, child support, stock pledges, etc. Use continuation
-                    sheet, if necessary. Indicate by (*) those liabilities which will be satisfied upon sale of real estate owned or upon refinancing
-                    of the subject property.
-                  </p>
+                <td class="w-50">
+                  Stocks & Bonds (Company name/number description) <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                  <br />
+                  <span></span>
                 </td>
+                <td class="w-50"></td>
               </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead class="table-head">
-              <tr>
-                <th width="33%" class="ps-2">LIABILITIES</th>
-                <th width="33%">
-                  Monthly Payment & <br />
-                  Months Left to Pay
-                </th>
-                <th width="33%">Unpaid Balance</th>
-              </tr>
-            </thead>
-            <tbody>
               <tr>
                 <td>
-                  Name and address of Company
-                  <div style="height: 62px"></div>
-                  <div style="border-top: 1px solid;margin-left: -5px;margin-right: -2px; margin-top: -25px;">
-                    <p class="ms-1 pt-1" style="margin-bottom: -1px;">Acct. no.</p>
-                  </div>
+                  Life insurance net cash value
+                  <br />
+                  Face amount: $
                 </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Subtotal Liquid Assets</td>
+                <td></td>
+              </tr>
+              <tr>
                 <td>
-                  $ Payments/Months
-                  <div style="height: 74px"></div>
+                  Real Estate owned (enter market value from schedule of real
+                  estate owned)
                 </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Vested interest in retirement fund</td>
+                <td>$</td>
+              </tr>
+              <tr>
                 <td>
-                  $
-                  <div style="height: 74px"></div>
+                  Net worth of business(es) owned (attach financial statement)
+                  <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                  <br />
+                  <br />
+                  <span></span>
+                  <br />
                 </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Automobiles owned (make & yr.)
+                  <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                  <br />
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  Other Assets (itemize)
+                  <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                  <br />
+                  <span></span>
+                  <br />
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td style="background-color: #e5e5e5" class="fw-bold py-3">
+                  Total Assets a.
+                </td>
+                <td style="background-color: #e5e5e5" class="fw-bold">$</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
-    </section>
+      <div class="col-sm-7 p-0">
+        <table>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td>
+                <p style="font-size: 14px; line-height: 15px">
+                  Liabilities and Pledged Assets. List the creditor’s name,
+                  address and account number for all outstanding debts,
+                  including automobile loans, revolving charge accounts, real
+                  estate loans, alimony, child support, stock pledges, etc.
+                  Use continuation sheet, if necessary. Indicate by (*) those
+                  liabilities which will be satisfied upon sale of real estate
+                  owned or upon refinancing of the subject property.
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead class="table-head">
+            <tr>
+              <th width="33%" class="ps-2">LIABILITIES</th>
+              <th width="33%">
+                Monthly Payment & <br />
+                Months Left to Pay
+              </th>
+              <th width="33%">Unpaid Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Name and address of Company
+                <div style="height: 62px"></div>
+                <div style="
+                      border-top: 1px solid;
+                      margin-left: -5px;
+                      margin-right: -2px;
+                      margin-top: -25px;
+                    ">
+                  <p class="ms-1 pt-1" style="margin-bottom: -1px">
+                    Acct. no.
+                  </p>
+                </div>
+              </td>
+              <td>
+                $ Payments/Months
+                <div style="height: 74px"></div>
+              </td>
+              <td>
+                $
+                <div style="height: 74px"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
