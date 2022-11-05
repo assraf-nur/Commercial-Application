@@ -75,6 +75,11 @@
       label {
         transform: translateY(-8px);
       }
+      .chk-box {
+        border: 1px solid black;
+        height: 15px;
+        width: 15px;
+      }
     </style>
   </head>
   <body>
@@ -144,67 +149,27 @@
               <td>Cell Phone (incl. area code)</td>
               <td></td>
             </tr>
-            <tr sty>
-              <td colspan="2">
-                <div style="clear: both">
-                  <div style="float: left">
-                    <input type="checkbox" />
-                    <label>Married</label>
-                  </div>
-                  <div style="float: left; margin-left: 30px">
-                    <input type="checkbox" />
-                    <label>Separated</label>
-                  </div>
-                  <div style="float: left; margin-left: 30px">
-                    <input type="checkbox" />
-                    <label>Unmarried (include single, divorced, widowed)</label>
-                  </div>
-                </div>
-                <br />
-              </td>
-            </tr>
             <tr>
               <td colspan="2">
-                <p style="margin-bottom: 30px">Present Address (street, city, state, zip)</p>
-                <div style="clear: both">
-                  <div style="float: left">
-                    <input type="checkbox" name="" id="" />
-                    <label for="">Own</label>
-                  </div>
-                  <div style="float: left; margin-left: 30px">
-                    <input type="checkbox" name="" id="" />
-                    <label for="">Rent</label>
-                  </div>
-                  <div style="float: left; margin-left: 30px">
-                    <p>$...........Per Mo.......... No. Yrs.</p>
-                  </div>
+                <div style="float: left;">
+                  <div style="float: left;" class="chk-box"></div>
+                  <p style="float: left; margin-top: 7px; margin-top: -1px; margin-left: 5px">Married</p>
+                  <div style="clear: both"></div>
                 </div>
+                <div style="float: left;">
+                  <div style="float: left; margin-left: 15px;" class="chk-box"></div>
+                  <p style="float: left; margin-top: 7px; margin-top: -1px; margin-left: 5px">Separated</p>
+                  <div style="clear: both"></div>
+                </div>
+                <div style="float: left;">
+                  <div style="float: left; margin-left: 15px;" class="chk-box"></div>
+                  <p style="float: left; margin-top: 7px; margin-top: -1px; margin-left: 5px">Unmarried (include single, divorced, widowed)</p>
+                  <div style="clear: both"></div>
+                </div>
+                <div style="clear: both;"></div>
               </td>
             </tr>
           </tbody>
-        </table>
-        <p style="margin-top: 10px;margin-bottom: 10px;">
-          <i>If residing at present address for less than seven (7) years, complete the following:</i>
-        </p>
-        <table>
-          <tr>
-            <td style="padding-bottom: 10px;">
-              <p style="margin-bottom: 30px">Former Address (street, city, state, zip)</p>
-              <div style="clear: both">
-                <div style="float: left">
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Own</label>
-                </div>
-                <div style="float: left; margin-left: 30px">
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Rent</label>
-                </div>
-                <div style="float: left; margin-left: 30px">
-                  <p>$...........Per Mo.......... No. Yrs.</p>
-                </div>
-              </div>
-            </td>
-          </tr>
         </table>
       </div>
     </div>
