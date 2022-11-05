@@ -11,11 +11,10 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Arial";
       }
 
       body {
-        font-family: "Arial";
+        font-family: "Open Sans", sans-serif;
       }
 
       .container {
@@ -64,7 +63,7 @@
         padding-top: 5px;
         padding-bottom: 5px;
       }
-      th{
+      th {
         padding-top: 5px;
         padding-bottom: 5px;
         text-align: start;
@@ -73,10 +72,13 @@
         background-color: #e5e5e5;
         border: 1px solid #2d2d2d !important;
       }
+      label {
+        transform: translateY(-8px);
+      }
     </style>
   </head>
   <body>
-    <section class="container">
+    <div class="container">
       <div style="clear: both; margin-top: 20px">
         <div style="width: 200px; float: left">
           <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
@@ -109,11 +111,11 @@
       </div>
 
       <!-- table start -->
-      <div style="margin-top: 30px;">
+      <div style="margin-top: 30px">
         <table>
           <thead class="table-head">
             <tr>
-              <th width="50%">Borrower’s</th>
+              <th style="padding-left: 5px" width="50%">Borrower’s</th>
               <th></th>
             </tr>
           </thead>
@@ -122,9 +124,49 @@
               <td>Borrower’s Name</td>
               <td></td>
             </tr>
+            <tr>
+              <td>DOB (mm/dd/yyyy)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Social Security Number</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Home Phone (incl. area code)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>E-Mail Address</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Cell Phone (incl. area code)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <p>Present Address (street, city, state, zip)</p>
+                <div style="clear: both">
+                  <div style="margin-top: 20px; float: left">
+                    <input type="checkbox" />
+                    <label>Married</label>
+                  </div>
+                  <div style="margin-top: 20px; float: left; margin-left: 30px">
+                    <input type="checkbox" />
+                    <label>Separated</label>
+                  </div>
+                  <div style="margin-top: 20px; float: left; margin-left: 30px">
+                    <input type="checkbox" />
+                    <label>Unmarried (include single, divorced, widowed)</label>
+                  </div>
+                </div>
+                <br />
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
-    </section>
+    </div>
   </body>
 </html>
