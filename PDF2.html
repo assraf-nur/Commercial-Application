@@ -21,18 +21,66 @@
         width: 90%;
         margin: 0 auto;
       }
+      .underline {
+        height: 5px;
+        background-color: black;
+      }
+      .green-line3 {
+        margin-top: 3px;
+        height: 20px;
+        width: 400px;
+        background-color: #006e3a;
+        clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%); 
+      }
+      .green-line2 {
+        margin-left: -10px;
+        margin-top: 3px;
+        height: 20px;
+        width: 150px;
+        background-color: #5b9870;
+        clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
+      }
+      .green-line {
+        margin-left: -10px;
+        margin-top: 3px;
+        height: 20px;
+        width: 150px;
+        background-color: #8fbe96;
+        clip-path: polygon(25% 0, 100% 0, 75% 100%, 0% 100%);
+      }
     </style>
   </head>
   <body>
     <section class="container">
-      <div style="clear: both; margin-top: 20px;">
+      <div style="clear: both; margin-top: 20px">
         <div style="width: 250px; float: left">
           <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
         </div>
-        <div style="float: right; margin-top: 40px;">
-          <h1 style="font-size: 34px; font-weight: 600;">Commercial Loan Application</h1>
+        <div style="float: right; margin-top: 20px; text-align: end">
+          <p style="margin-bottom: 10px">
+            <strong><i>Page 1 of 4 </i></strong>
+          </p>
+          <h1 style="font-size: 34px; font-weight: 600">Commercial Loan Application</h1>
         </div>
         <div style="clear: both"></div>
+      </div>
+
+      <!-- underline -->
+      <div class="underline"></div>
+
+      <div style="clear: both; margin-top: 5px">
+        <div style="float: left">
+          <h1 style="font-weight: 600">PERSONAL INFORMATION</h1>
+        </div>
+        <div style="float: right">
+          <div class="green-line"></div>
+        </div>
+        <div style="float: right">
+          <div class="green-line2"></div>
+        </div>
+        <div style="float: right">
+          <div class="green-line3"></div>
+        </div>
       </div>
     </section>
   </body>
