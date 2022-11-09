@@ -30,6 +30,14 @@
       @page :header {
         display: none
       }
+
+      @page {
+        margin: 1;
+      }
+
+      #printPageButton {
+        display: none;
+      }
     }
 
     .main-body {
@@ -81,6 +89,23 @@
       border: 1px solid #8fbe96ad;
     }
 
+    .screen-print-button {
+      position: absolute;
+      right: 50%;
+      border: none;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: #AA0A00;
+      font-weight: 700;
+      color: white;
+    }
+
+    * {
+      -webkit-print-color-adjust: exact !important;
+      -color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
     /* th {
       border: 1px solid #2d2d2d;
       font-size: 14px;
@@ -93,12 +118,15 @@
 
 <body>
   <section class="main-body">
+    <div>
+      <button class="screen-print-button mt-3" id="printPageButton" onClick="window.print();">Print this Page</button>
+    </div>
     <div class="mt-0" style="clear: both">
       <div style="width: 250px; float: left">
         <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
       </div>
       <div style="float: right">
-        <p class="fw-bold text-end mt-2"><i>Page 1 of 4</i></p>
+        <p class="fw-bold text-end mt-2"><i>Page 1 of 7</i></p>
         <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">
           Commercial Loan Request
         </h1>
@@ -578,7 +606,7 @@
         <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
       </div>
       <div style="float: right">
-        <p class="fw-bold text-end mt-2"><i>Page 2 of 4</i></p>
+        <p class="fw-bold text-end mt-2"><i>Page 2 of 7</i></p>
         <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">
           Commercial Loan Request
         </h1>
@@ -765,7 +793,7 @@
         <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
       </div>
       <div style="float: right">
-        <p class="fw-bold text-end mt-2"><i>Page 2 of 4</i></p>
+        <p class="fw-bold text-end mt-2"><i>Page 3 of 7</i></p>
         <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">
           Commercial Loan Request
         </h1>
@@ -1242,7 +1270,7 @@
           <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
         </div>
         <div style="float: right">
-          <p class="fw-bold text-end mt-2"><i>Page 3 of 4</i></p>
+          <p class="fw-bold text-end mt-2"><i>Page 4 of 7</i></p>
           <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">
             Commercial Loan Request
           </h1>
@@ -1252,7 +1280,8 @@
       <div class="w-100 p-1 bg-black"></div>
 
       <div class="mt-1">
-        <p class="mb-0"><strong>Schedule of Real Estate Owned</strong> (if additional properties are owned, use continuation sheet)
+        <p class="mb-0"><strong>Schedule of Real Estate Owned</strong> (if additional properties are owned, use
+          continuation sheet)
         </p>
       </div>
 
@@ -1665,7 +1694,7 @@
         <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
       </div>
       <div style="float: right">
-        <p class="fw-bold text-end mt-2"><i>Page 1 of 4</i></p>
+        <p class="fw-bold text-end mt-2"><i>Page 5 of 7</i></p>
         <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">
           Commercial Loan Request
         </h1>
@@ -1929,7 +1958,7 @@
         <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
       </div>
       <div style="float: right">
-        <p class="fw-bold text-end mt-2"><i>Page 4 of 4</i></p>
+        <p class="fw-bold text-end mt-2"><i>Page 6 of 7</i></p>
         <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">
           Commercial Loan Request
         </h1>
@@ -2190,9 +2219,27 @@
           </label>
         </div>
       </div>
+
+      <div class="mt-5" style="page-break-after: always;">
+        <h6 class="fw-bold mb-4">Borrower________________</h6>
+        <h6 class="fw-bold">Co-Borrower_____________</h6>
+      </div>
     </div>
 
+    <div class="mt-4" style="clear: both">
+      <div style="width: 250px; float: left">
+        <img src="https://commerciallendingusa.com/commercialLogo.png" style="max-width: 100%" alt="" />
+      </div>
+      <div style="float: right">
+        <p class="fw-bold text-end mt-2"><i>Page 7 of 7</i></p>
+        <h1 class="fw-bold" style="font-size: 34px; margin-top: -10px">
+          Commercial Loan Request
+        </h1>
+      </div>
+      <div style="clear: both"></div>
+    </div>
     <div class="w-100 p-1 bg-black mt-3"></div>
+
     <div class="mt-2">
       <div class="row">
         <h4 class="fw-bold col-sm-6">ACKNOWLEDGEMENT AND AGREEMENT</h4>
