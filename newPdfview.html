@@ -77,12 +77,17 @@
     }
 
     th {
+      background-color: #8fbe96ad;
+      border: 1px solid #8fbe96ad;
+    }
+
+    /* th {
       border: 1px solid #2d2d2d;
       font-size: 14px;
       padding-left: 5px;
       font-weight: 800;
       padding-top: 5px;
-    }
+    } */
   </style>
 </head>
 
@@ -101,19 +106,20 @@
       <div style="clear: both"></div>
     </div>
     <div class="w-100 p-1 bg-black"></div>
+
     <div class="mt-2">
-      <div class="row">
-        <h4 class="fw-bold col-sm-4">PERSONAL INFORMATION</h4>
-        <div class="row col-sm-8">
-          <div class="col-md-9 color-line1"></div>
-          <div class="col-md color-line2"></div>
-          <div class="col-md color-line3"></div>
+      <div class="d-flex">
+        <h4 class="fw-bold">PERSONAL INFORMATION</h4>
+        <div class="d-flex">
+          <div style="width: 535px;" class="color-line1 ms-3"></div>
+          <div style="width: 100px;" class="color-line2"></div>
+          <div style="width: 100px;" class="color-line3"></div>
         </div>
       </div>
     </div>
 
-    <div class="row mt-1">
-      <div class="col-sm">
+    <div class="d-flex mt-1">
+      <div class="me-2 w-100">
         <table class="w-100">
           <thead>
             <tr class="table-head">
@@ -197,7 +203,7 @@
           </tbody>
         </table>
       </div>
-      <div class="col-sm">
+      <div class="w-100">
         <table class="w-100">
           <thead>
             <tr class="table-head">
@@ -286,9 +292,9 @@
       <i>If residing at present address for less than seven (7) years,
         complete the following:</i>
     </div>
-    <div class="row">
-      <div class="col-md">
-        <table>
+    <div class="d-flex gap-2">
+      <div class="w-100">
+        <table class="w-100">
           <thead></thead>
           <tbody>
             <tr>
@@ -319,8 +325,8 @@
           </tbody>
         </table>
       </div>
-      <div class="col-md">
-        <table>
+      <div class="w-100">
+        <table class="w-100">
           <thead></thead>
           <tbody>
             <tr>
@@ -353,19 +359,19 @@
       </div>
     </div>
 
-    <div class="mt-3">
-      <div class="row">
-        <h4 class="fw-bold col-sm-2">RESUME</h4>
-        <div class="row col-sm-10">
-          <div class="col-md-9 color-line1"></div>
-          <div class="col-md color-line2"></div>
-          <div class="col-md color-line3"></div>
+    <div class="mt-2">
+      <div class="d-flex">
+        <h4 class="fw-bold">Resume</h4>
+        <div class="d-flex w-100" style="margin-top: 2px;">
+          <div style="width: 80%;clip-path: polygon(0 0, 100% 0, 96.5% 100%, 0% 100%);" class="color-line1 ms-4"></div>
+          <div style="width: 100px;" class="color-line2"></div>
+          <div style="width: 100px;" class="color-line3"></div>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm">
+    <div class="d-flex gap-2">
+      <div class="w-100">
         <table class="w-100">
           <thead>
             <tr class="table-head">
@@ -401,7 +407,7 @@
           </tbody>
         </table>
       </div>
-      <div class="col-sm">
+      <div class="w-100">
         <table class="w-100">
           <thead>
             <tr class="table-head">
@@ -444,18 +450,14 @@
         the following:</i>
     </div>
 
-    <div class="row">
-      <div class="col-sm">
+    <div class="d-flex gap-2">
+      <div class="w-100">
         <table class="w-100">
           <thead>
-            <tr>
-              <th class="w-50"></th>
-              <th class="w-50"></th>
-            </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Name and Address of Employer</td>
+              <td width="50%">Name and Address of Employer</td>
               <td></td>
             </tr>
             <tr>
@@ -477,17 +479,14 @@
           </tbody>
         </table>
       </div>
-      <div class="col-sm">
+      <div class="w-100">
         <table class="w-100">
           <thead>
-            <tr>
-              <th class="w-50"></th>
-              <th class="w-50"></th>
-            </tr>
+
           </thead>
           <tbody>
             <tr>
-              <td>Name and Address of Employer</td>
+              <td width="50%">Name and Address of Employer</td>
               <td></td>
             </tr>
             <tr>
@@ -511,13 +510,14 @@
       </div>
     </div>
 
-    <div class="mt-3">
-      <div class="row">
-        <h4 class="fw-bold col-sm-5">PERSONAL INCOME SOURCES</h4>
-        <div class="row col-sm-7">
-          <div class="col-md-9 color-line1"></div>
-          <div class="col-md color-line2"></div>
-          <div class="col-md color-line3"></div>
+    <div class="mt-2">
+      <div class="d-flex w-100">
+        <h4 class="fw-bold">PERSONAL INCOME SOURCES</h4>
+        <div class="d-flex">
+          <div style="width: 475px;clip-path: polygon(0 0, 100% 0, 94.5% 100%, 0% 100%);" class="color-line1 ms-4">
+          </div>
+          <div style="width: 100px;" class="color-line2"></div>
+          <div style="width: 100px;" class="color-line3"></div>
         </div>
       </div>
     </div>
@@ -573,13 +573,14 @@
       </table>
     </div>
 
-    <div class="mt-3">
-      <div class="row">
-        <h4 class="fw-bold col-sm-3">DECLARATIONS</h4>
-        <div class="row col-sm-9">
-          <div class="col-md-9 color-line1"></div>
-          <div class="col-md color-line2"></div>
-          <div class="col-md color-line3"></div>
+    <div class="mt-2">
+      <div class="d-flex w-100">
+        <h4 class="fw-bold">DECLARATIONS</h4>
+        <div class="d-flex">
+          <div style="width: 645px;clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);" class="color-line1 ms-4">
+          </div>
+          <div style="width: 100px;" class="color-line2"></div>
+          <div style="width: 100px;" class="color-line3"></div>
         </div>
       </div>
     </div>
@@ -591,7 +592,7 @@
       </p>
       <table>
         <thead>
-          <tr>
+          <tr class="d-none">
             <th width="40px"></th>
             <th width="40px"></th>
             <th></th>
@@ -609,14 +610,14 @@
           </tr>
           <tr>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>1. Are there any outstanding judgement against you?</td>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -624,14 +625,14 @@
           </tr>
           <tr>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>2. Have you been declared bankrupt in the last 10 years?</td>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -639,7 +640,7 @@
           </tr>
           <tr>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -649,7 +650,7 @@
               in lieu?
             </td>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -657,14 +658,14 @@
           </tr>
           <tr>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>4. Are you a party to a lawsuit?</td>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -672,7 +673,7 @@
           </tr>
           <tr>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -682,7 +683,7 @@
               maintenance?
             </td>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -690,14 +691,14 @@
           </tr>
           <tr>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>6. Are any of your assets held in a trust?</td>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -705,14 +706,14 @@
           </tr>
           <tr>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>7. Are you a U.S. citizen?</td>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -720,7 +721,7 @@
           </tr>
           <tr>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -730,7 +731,7 @@
               copy of resident alien ID card.
             </td>
             <td>
-              <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
+              <input class="form-check-input ms-3" type="checkbox" value="" id="flexCheckCheckedr" />
             </td>
             <td>
               <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckCheckedr" />
@@ -2482,14 +2483,14 @@
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-    crossorigin="anonymous"></script>
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
