@@ -158,45 +158,52 @@
           <tbody>
             <tr>
               <td>Borrower’s Name</td>
-              <td></td>
+              <td>{{$client->applicant_first_name}} {{$client->applicant_middle_name}} {{$client->applicant_last_name}}
+              </td>
             </tr>
             <tr>
               <td>DOB (mm/dd/yyyy)</td>
-              <td></td>
+              <td>{{$client->s1_date_of_birth}}</td>
             </tr>
             <tr>
               <td>Social Security Number</td>
-              <td></td>
+              <td>{{$client->s1_social_security_number}}</td>
             </tr>
             <tr>
               <td>Home Phone (incl. area code)</td>
-              <td></td>
+              <td>{{$client->s1_home_phone}}</td>
             </tr>
             <tr>
               <td>E-Mail Address</td>
-              <td></td>
+              <td>{{$client->email}}</td>
             </tr>
             <tr>
               <td>Cell Phone (incl. area code)</td>
-              <td></td>
+              <td>{{$client->cell_phone}}</td>
             </tr>
             <tr>
               <td colspan="2">
                 <div class="d-flex">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                    <input class="form-check-input" @if ($client->s1_married_status) checked @endif type="checkbox"
+                    value=""
+                    id="flexCheckDefault" />
                     <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault">
                       Married
                     </label>
                   </div>
                   <div class="form-check ms-3">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                    <input class="form-check-input" @if ($client->s1_married_status) checked @endif type="checkbox"
+                    value=""
+                    id="flexCheckChecked" />
                     <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked">
                       Separated
                     </label>
                   </div>
                   <div class="form-check ms-3">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" />
+                    <input class="form-check-input" @if ($client->s1_married_status) checked @endif type="checkbox"
+                    value=""
+                    id="flexCheckChecked2" />
                     <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked2">
                       Unmarried (include single, divorced, widowed)
                     </label>
@@ -207,22 +214,26 @@
             <tr>
               <td colspan="2">
                 <p class="mt-2">Present Address (street, city, state, zip)</p>
-                <div class="mt-3 mb-0 d-flex">
+                <p>{{$client->s1_present_address}}</p>
+                <div class="d-flex">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault">
-                      Married
+                    <input class="form-check-input" @if ($client->s1_accommodation_type) checked @endif type="checkbox"
+                    value="" id="flexCheckDefaulto" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefaulto">
+                      Own
                     </label>
                   </div>
                   <div class="form-check ms-3">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked">
-                      Separated
+                    <input class="form-check-input" @if ($client->s1_accommodation_type) checked @endif type="checkbox"
+                    value="" id="flexCheckCheckedr" />
+                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckCheckedr">
+                      Rent
                     </label>
                   </div>
                   <div class="ms-5">
                     <p style="margin-top: 0.5px">
-                      $......... Per Mo.......... No. Yrs.
+                      ${{$client->s1_accommodation_rent_per_month}}Per Mo{{$client->s1_accommodation_number_of_year}}No.
+                      Yrs.
                     </p>
                   </div>
                 </div>
@@ -292,22 +303,24 @@
               <td colspan="2">
                 <p class="mt-2">Present Address (street, city, state, zip)</p>
                 <div class="mt-3 mb-0 d-flex">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefault">
-                      Married
-                    </label>
-                  </div>
-                  <div class="form-check ms-3">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
-                    <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckChecked">
-                      Separated
-                    </label>
-                  </div>
-                  <div class="ms-5">
-                    <p style="margin-top: 0.5px">
-                      $......... Per Mo.......... No. Yrs.
-                    </p>
+                  <div class="d-flex">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulto" />
+                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefaulto">
+                        Own
+                      </label>
+                    </div>
+                    <div class="form-check ms-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedr" />
+                      <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckCheckedr">
+                        Rent
+                      </label>
+                    </div>
+                    <div class="ms-5">
+                      <p style="margin-top: 0.5px">
+                        $......... Per Mo.......... No. Yrs.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </td>
@@ -331,20 +344,22 @@
 
                 <div class="d-flex">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulto" />
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaulto" @if
+                      ($client->s1_residing_address) checked @endif />
                     <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckDefaulto">
                       Own
                     </label>
                   </div>
                   <div class="form-check ms-3">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedr" />
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedr" @if
+                      ($client->s1_residing_address) checked @endif/>
                     <label style="margin-top: 0.5px" class="form-check-label" for="flexCheckCheckedr">
                       Rent
                     </label>
                   </div>
                   <div class="ms-5">
                     <p style="margin-top: 0.5px">
-                      $......... Per Mo.......... No. Yrs.
+                      ${{$client->s1_residing_rent_per_month}}Per Mo{{$client->s1_residing_number_of_year}}No. Yrs.
                     </p>
                   </div>
                 </div>
@@ -410,27 +425,27 @@
           <tbody>
             <tr>
               <td>Name and Address of Employer</td>
-              <td></td>
+              <td>{{$apply->s2_resume_name}} {{$apply->s2_resume_address}}</td>
             </tr>
             <tr>
               <td>Title/Position</td>
-              <td></td>
+              <td>{{$apply->s2_resume_title_position}}</td>
             </tr>
             <tr>
               <td>Type of Business</td>
-              <td></td>
+              <td>{{$apply->s2_resume_business_type}}</td>
             </tr>
             <tr>
               <td>Business Phone (incl. area code)</td>
-              <td></td>
+              <td>{{$apply->s2_resume_business_phone_number}}</td>
             </tr>
             <tr>
               <td>Years on this job</td>
-              <td></td>
+              <td>{{$apply->s2_resume_business_year}}</td>
             </tr>
             <tr>
               <td>Years in Profession</td>
-              <td></td>
+              <td>{{$apply->s2_resume_business_years}}</td>
             </tr>
           </tbody>
         </table>
@@ -486,23 +501,23 @@
           <tbody>
             <tr>
               <td width="50%">Name and Address of Employer</td>
-              <td></td>
+              <td>{{$apply->s2_resume_employee_name}} {{$apply-> s2_resume_employee_address}}</td>
             </tr>
             <tr>
               <td>Title/Position</td>
-              <td></td>
+              <td>{{$apply->s2_resume_employee_title}} {{$apply-> s2_resume_employee_position}}</td>
             </tr>
             <tr>
               <td>Type of Business</td>
-              <td></td>
+              <td>{{$apply->s2_resume_employee_business_types}}</td>
             </tr>
             <tr>
               <td>Business Phone (incl. area code)</td>
-              <td></td>
+              <td>{{$apply->s2_resume_employee_phone_number}}</td>
             </tr>
             <tr>
               <td>Dates (from-to)</td>
-              <td></td>
+              <td>{{$apply->s2_resume_employee_date_from}} to {{$apply-> s2_resume_employee_date_to}}</td>
             </tr>
           </tbody>
         </table>
@@ -550,7 +565,7 @@
       </div>
     </div>
 
-    <div style="page-break-after: always;">
+    <div>
       <table class="w-100">
         <thead>
           <tr class="table-head">
@@ -562,40 +577,107 @@
         <tbody>
           <tr>
             <td>Borrower and Co-Borrower Gross Salary</td>
-            <td></td>
-            <td></td>
+            <td>{{$apply->s2_personal_income_borrower_monthly_gross_salary}}</td>
+            <td>{{$apply->s2_personal_income_borrower_yearly_gross_salary}}</td>
           </tr>
           <tr>
             <td>Schedule B (Recruiting Interest and Dividends)</td>
-            <td></td>
-            <td></td>
+            <td>{{$apply->s2_personal_income_recruiting_interest_monthly}}</td>
+            <td>{{$apply->s2_personal_income_recruiting_interest_yearly}}</td>
           </tr>
           <tr>
             <td>Schedule C (Net Profit of Proprietorships)</td>
-            <td></td>
-            <td></td>
+            <td>{{$apply->s2_personal_income_net_profit_monthly}}</td>
+            <td>{{$apply->s2_personal_income_net_profit_yearly}}</td>
           </tr>
           <tr>
             <td>Schedule D (Recurring Capital Gains Less Losses)</td>
-            <td></td>
-            <td></td>
+            <td>{{$apply->s2_personal_income_capital_gains_monthly}}</td>
+            <td>{{$apply->s2_personal_income_capital_gains_yearly}}</td>
           </tr>
           <tr>
             <td>
               Schedule E (Recurring Rental Income Excluding Subject Property)
             </td>
-            <td></td>
-            <td></td>
+            <td>{{$apply->s2_personal_income_recurring_rental_monthly}}</td>
+            <td>{{$apply->s2_personal_income_recurring_rental_yearly}}</td>
           </tr>
           <tr>
             <td>Other (List)</td>
-            <td></td>
-            <td></td>
+            <td>{{$apply->s2_personal_income_others_monthly_income}}</td>
+            <td>{{$apply->s2_personal_income_others_yearly_income}}</td>
           </tr>
           <tr>
             <td style="background-color: #8fbe96">TOTAL PERSONAL INCOME</td>
-            <td style="background-color: #8fbe96"></td>
-            <td style="background-color: #8fbe96"></td>
+            <td style="background-color: #8fbe96">{{$apply->s2_personal_income_personal_monthly_income}}</td>
+            <td style="background-color: #8fbe96">{{$apply->s2_personal_income_personal_yearly_income}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-2">
+      <div class="d-flex w-100">
+        <h4 class="fw-bold w-100 d-block">PERSONAL CASH REQUIREMENTS</h4>
+        <!-- <div class="d-flex">
+          <div style="width: 275px;clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);" class="color-line1 ms-4">
+          </div>
+          <div style="width: 100px;" class="color-line2"></div>
+          <div style="width: 100px;" class="color-line3"></div>
+        </div> -->
+      </div>
+    </div>
+
+    <div style="page-break-after: always;">
+      <table class="w-100">
+        <thead>
+          <tr class="table-head">
+            <th class="w-50 py-1 ps-2">Source</th>
+            <th class="w-25 py-1 ps-2">MONTHLY</th>
+            <th class="w-25 py-1 ps-2">ANNUALLY</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Residence Mortgage Payment / Rent Payment</td>
+            <td>{{$apply-> s2_personal_cash_rent_payment_monthly_expenses}}</td>
+            <td>{{$apply-> s2_personal_cash_rent_payment_yearly_expenses}}</td>
+          </tr>
+          <tr>
+            <td>Federal, State & Real Estate Taxes</td>
+            <td>{{$apply-> s2_personal_cash_real_state_taxes_monthly_expenses}}</td>
+            <td>{{$apply-> s2_personal_cash_real_state_taxes_yearly_expenses}}</td>
+          </tr>
+          <tr>
+            <td>Installment Loan Payments</td>
+            <td>{{$apply-> s2_personal_cash_loan_payment_monthly_expenses}}</td>
+            <td>{{$apply-> s2_personal_cash_loan_payment_yearly_expenses}}</td>
+          </tr>
+          <tr>
+            <td>Credit Card Payments</td>
+            <td>{{$apply-> s2_personal_cash_credit_card_payment_monthly_expenses}}</td>
+            <td>{{$apply-> s2_personal_cash_credit_card_payment_yearly_expenses}}</td>
+          </tr>
+          <tr>
+            <td>
+              Rental Mortgage P&I Payments and Expenses (Exclude Subject Property)
+            </td>
+            <td>{{$apply-> s2_personal_cash_rental_mortgage_monthly_expenses}}</td>
+            <td>{{$apply-> s2_personal_cash_rental_mortgage_yearly_expenses}}</td>
+          </tr>
+          <tr>
+            <td>Alimony/Child Support</td>
+            <td>{{$apply-> s2_personal_cash_child_support_monthly_expenses}}</td>
+            <td>{{$apply-> s2_personal_cash_child_support_yearly_expenses}}</td>
+          </tr>
+          <tr>
+            <td>Other (List)</td>
+            <td>{{$apply-> s2_personal_cash_others_monthly_expenses}}</td>
+            <td>{{$apply-> s2_personal_cash_others_yearly_expenses}}</td>
+          </tr>
+          <tr>
+            <td style="background-color: #8fbe96">TOTAL PERSONAL EXPENSES</td>
+            <td style="background-color: #8fbe96">{{$apply-> s2_personal_cash_personal_monthly_expenses}}</td>
+            <td style="background-color: #8fbe96">{{$apply-> s2_personal_cash_personal_yearly_expenses}}</td>
           </tr>
         </tbody>
       </table>
@@ -831,20 +913,19 @@
 
     <div class="mt-0">
       <div class="d-flex justify-content-end">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Completed" />
-          <label style="margin-top: 0.5px" class="form-check-label" for="Completed">
-            Completed
-          </label>
-        </div>
+        <p class="mb-0 mt-1">Completed</p>
         <div class="form-check ms-3">
-          <input class="form-check-input" type="checkbox" value="" id="Jointly" />
+          <input class="form-check-input" type="checkbox" value="" id="Jointly" @if ($client->s4_aset_liabi_completed)
+          checked
+          @endif/>
           <label style="margin-top: 0.5px" class="form-check-label" for="Jointly">
             Jointly
           </label>
         </div>
         <div class="ms-3">
-          <input class="form-check-input" type="checkbox" value="" id="NotJointly" />
+          <input class="form-check-input" type="checkbox" value="" id="NotJointly" @if
+            ($client->s4_aset_liabi_completed) checked
+          @endif/>
           <label style="margin-top: 0.5px" class="form-check-label" for="NotJointly">
             Not Jointly
           </label>
@@ -868,9 +949,10 @@
               <tr>
                 <td>
                   Cash deposit toward purchase held by:
-                  <p class="mt-4"></p>
+                  <p class="mt-4">{{$apply-> s4_aset_liabi_asset_description}} {{$apply->
+                    s4_aset_liabi_asset_cash_deposit}}</p>
                 </td>
-                <td>$</td>
+                <td>$ {{$apply-> s4_aset_liabi_asset_market_value}}</td>
               </tr>
             </tbody>
           </table>
@@ -885,7 +967,7 @@
                 <tr>
                   <td colspan="3">
                     Name and address of Bank, S&L, or Credit Union <br />
-                    <span></span>
+                    <span>{{$apply-> s4_aset_liabi_savings_accounts_bank_info1}}</span>
                     <br />
                     <span></span>
                     <br />
@@ -895,8 +977,8 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="w-50">Acct. no.</td>
-                  <td class="w-50">$</td>
+                  <td class="w-50">Acct. no. {{$apply-> s4_aset_liabi_savings_accounts_account_name1}}</td>
+                  <td class="w-50">$ {{$apply-> s4_aset_liabi_savings_accounts_bank_balance1}}</td>
                 </tr>
               </tbody>
             </table>
@@ -905,7 +987,7 @@
                 <tr>
                   <td colspan="3">
                     Name and address of Bank, S&L, or Credit Union <br />
-                    <span></span>
+                    <span>{{$apply-> s4_aset_liabi_savings_accounts_bank_info2}}</span>
                     <br />
                     <span></span>
                     <br />
@@ -915,8 +997,8 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="w-50">Acct. no.</td>
-                  <td class="w-50">$</td>
+                  <td class="w-50">Acct. no. {{$apply-> s4_aset_liabi_savings_accounts_account_name2}}</td>
+                  <td class="w-50">$ {{$apply-> s4_aset_liabi_savings_accounts_bank_balance2}}</td>
                 </tr>
               </tbody>
             </table>
@@ -925,7 +1007,7 @@
                 <tr>
                   <td colspan="3">
                     Name and address of Bank, S&L, or Credit Union <br />
-                    <span></span>
+                    <span>{{$apply-> s4_aset_liabi_savings_accounts_bank_info3}}</span>
                     <br />
                     <span></span>
                     <br />
@@ -935,8 +1017,8 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="w-50">Acct. no.</td>
-                  <td class="w-50">$</td>
+                  <td class="w-50">Acct. no. {{$apply-> s4_aset_liabi_savings_accounts_account_name3}}</td>
+                  <td class="w-50">$ {{$apply-> s4_aset_liabi_savings_accounts_bank_balance3}}</td>
                 </tr>
               </tbody>
             </table>
@@ -952,30 +1034,30 @@
                     <br />
                     <span></span>
                   </td>
-                  <td class="w-50"></td>
+                  <td class="w-50">{{$apply-> s4_aset_liabi_savings_accounts_stock_bond_bank_description}}</td>
                 </tr>
                 <tr>
                   <td>
                     Life insurance net cash value
                     <br />
-                    Face amount: $
+                    Face amount: {{$apply-> s4_aset_liabi_savings_accounts_face_amount}} $
                   </td>
-                  <td></td>
+                  <td>{{$apply-> s4_aset_liabi_savings_accounts_life_insurance_cash_value}}</td>
                 </tr>
                 <tr>
                   <td class="fw-bold">Subtotal Liquid Assets</td>
-                  <td></td>
+                  <td>{{$apply-> s4_aset_liabi_savings_accounts_sub_liquid_assets}}</td>
                 </tr>
                 <tr>
                   <td>
                     Real Estate owned (enter market value from schedule of real
                     estate owned)
                   </td>
-                  <td></td>
+                  <td>{{$apply-> s4_aset_liabi_savings_accounts_real_estate_owned_value}}</td>
                 </tr>
                 <tr>
                   <td>Vested interest in retirement fund</td>
-                  <td>$</td>
+                  <td>{{$apply-> s4_aset_liabi_savings_accounts_retirement_fund_value}} $</td>
                 </tr>
                 <tr>
                   <td>
@@ -989,7 +1071,7 @@
                     <span></span>
                     <br />
                   </td>
-                  <td></td>
+                  <td>{{$apply-> s4_aset_liabi_savings_accounts_net_worth_value}}</td>
                 </tr>
                 <tr>
                   <td>
@@ -1002,7 +1084,7 @@
                     <span></span>
                     <br>
                   </td>
-                  <td></td>
+                  <td>{{$apply-> s4_aset_liabi_savings_accounts_auto_mobil_value}}</td>
                 </tr>
                 <tr>
                   <td>
@@ -1015,7 +1097,7 @@
                     <span></span>
                     <br />
                   </td>
-                  <td></td>
+                  <td>{{$apply-> s4_aset_liabi_savings_accounts_other_assets_value}}</td>
                 </tr>
                 <tr>
                   <td style="background-color: #e5e5e5" class="fw-bold py-3">
