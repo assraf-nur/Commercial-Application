@@ -1641,14 +1641,16 @@
         <p>Is there a prepayment penalty?</p>
         <div style="font-size: 14px;margin-top: -10px;" class="d-flex">
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="prepayment" @if ($client->s5_refinance_loan_penalty)
+            <input class="form-check-input" type="checkbox" value="" id="prepayment" @if
+              ($client->s5_refinance_loan_penalty)
             checked @endif>
             <label style="margin-top: 1px;" class="form-check-label" for="prepayment">
               Yes
             </label>
           </div>
           <div class="form-check ms-3">
-            <input class="form-check-input" type="checkbox" value="" id="penalty" @if ($client->s5_refinance_loan_penalty) checked
+            <input class="form-check-input" type="checkbox" value="" id="penalty" @if
+              ($client->s5_refinance_loan_penalty) checked
             @endif>
             <label style="margin-top: 1px;" class="form-check-label" for="penalty">
               No
@@ -1768,12 +1770,12 @@
           <tr>
             <td width="40%">Amount Requested
               <div style="height: 30px;">
-
+                {{$apply-> s5_cash_out_request_amount_requested}}
               </div>
             </td>
             <td>Cash out use:
               <div style="height: 30px;">
-
+                {{$apply-> s5_cash_out_request_cash_out_use}}
               </div>
             </td>
           </tr>
@@ -1815,7 +1817,7 @@
     <div>
       <p>Print Exact Names of Individuals, Form of Title, or Entity</p>
       <div class="w-100">
-        <p class="border-bottom" style="height: 50px;width: 136%;">
+        <p class="border-bottom" style="width: 136%;">
 
         </p>
       </div>
@@ -1825,31 +1827,36 @@
       <div class="mx-auto d-flex" style="font-size: 14px;">
         <p>Type of Entity (select one)</p>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="C-Corp">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="C-Corp" @if
+            ($client->s5_real_estate_title_type_of_entity) checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="C-Corp">
             C-Corp
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="S-Corp">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="S-Corp" @if
+            ($client->s5_real_estate_title_type_of_entity) checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="S-Corp">
             S-Corp
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="Partnership">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="Partnership" @if
+            ($client->s5_real_estate_title_type_of_entity) checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="Partnership">
             Partnership
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="Proprietorship">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="Proprietorship" @if
+            ($client->s5_real_estate_title_type_of_entity) checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="Proprietorship">
             Proprietorship
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="Other">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="Other" @if
+            ($client->s5_real_estate_title_type_of_entity) checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="Other">
             Other:________
           </label>
@@ -1860,31 +1867,36 @@
       <div class="mx-auto d-flex" style="font-size: 14px;">
         <p>Business Type (select one)</p>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="C-Retail">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="C-Retail" @if
+            ($client->s5_real_estate_title_business_type) checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="C-Retail">
             Retail
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="Service-Corp">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="Service-Corp" @if
+            ($client->s5_real_estate_title_business_type) checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="Service-Corp">
             Service
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="Wholesale">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="Wholesale" @if
+            ($client->s5_real_estate_title_business_type) checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="Wholesale">
             Wholesale
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="Manufacturing">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="Manufacturing" @if
+            ($client->s5_real_estate_title_business_type) checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="Manufacturing">
             Manufacturing
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="Construction">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="Construction" @if
+            ($client->s5_real_estate_title_business_type) checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="Construction">
             Construction
           </label>
@@ -1906,28 +1918,28 @@
 
     <div class="d-flex w-100">
       <div class="w-100">
-        <p>Name:_________________________________</p>
-        <p>Name:_________________________________</p>
-        <p>Name:_________________________________</p>
-        <p>Name:_________________________________</p>
-        <p>Name:_________________________________</p>
-        <p>Name:_________________________________</p>
+        <p>Name: {{$apply-> s5_ownership_officers_directors_name1}}</p>
+        <p>Name: {{$apply-> s5_ownership_officers_directors_name2}}</p>
+        <p>Name: {{$apply-> s5_ownership_officers_directors_name3}}</p>
+        <p>Name: {{$apply-> s5_ownership_officers_directors_name4}}</p>
+        <p>Name: {{$apply-> s5_ownership_officers_directors_name5}}</p>
+        <p>Name: {{$apply-> s5_ownership_officers_directors_name6}}</p>
       </div>
       <div class="w-100">
-        <p>Title:_________________________________</p>
-        <p>Title:_________________________________</p>
-        <p>Title:_________________________________</p>
-        <p>Title:_________________________________</p>
-        <p>Title:_________________________________</p>
-        <p>Title:_________________________________</p>
+        <p>Title: {{$apply-> s5_ownership_officers_directors_title1}}</p>
+        <p>Title: {{$apply-> s5_ownership_officers_directors_title2}}</p>
+        <p>Title: {{$apply-> s5_ownership_officers_directors_title3}}</p>
+        <p>Title: {{$apply-> s5_ownership_officers_directors_title4}}</p>
+        <p>Title: {{$apply-> s5_ownership_officers_directors_title5}}</p>
+        <p>Title: {{$apply-> s5_ownership_officers_directors_title6}}</p>
       </div>
       <div class="w-100">
-        <p>% Owned:______________________________</p>
-        <p>% Owned:______________________________</p>
-        <p>% Owned:______________________________</p>
-        <p>% Owned:______________________________</p>
-        <p>% Owned:______________________________</p>
-        <p>% Owned:______________________________</p>
+        <p>% Owned: {{$apply-> s5_ownership_officers_directors_owned1}}</p>
+        <p>% Owned: {{$apply-> s5_ownership_officers_directors_owned2}}</p>
+        <p>% Owned: {{$apply-> s5_ownership_officers_directors_owned3}}</p>
+        <p>% Owned: {{$apply-> s5_ownership_officers_directors_owned4}}</p>
+        <p>% Owned: {{$apply-> s5_ownership_officers_directors_owned5}}</p>
+        <p>% Owned: {{$apply-> s5_ownership_officers_directors_owned6}}</p>
       </div>
     </div>
 
@@ -1950,34 +1962,34 @@
           <tr>
             <td width="35%" colspan="2">Business Name
               <div style="height: 30px;">
-
+                {{$apply-> s6_business_information_business_name}}
               </div>
             </td>
             <td>Executive / Mailing Address, if other
               <div style="height: 30px;">
-
+                {{$apply-> s6_business_information_mailing_address}}
               </div>
             </td>
             <td>Sq.Ft.
               <div style="height: 30px;">
-
+                {{$apply-> s6_business_information_sq_ft}}
               </div>
             </td>
             <td>Mo. Rent $
               <div style="height: 30px;">
-
+                {{$apply-> s6_business_information_monthly_rent}}
               </div>
             </td>
             <td>Lease Expires
               <div style="height: 30px;">
-
+                {{$apply-> s6_business_information_lease_expires_date}}
               </div>
             </td>
           </tr>
           <tr>
             <td colspan="2">DBA:
               <div style="height: 30px;">
-
+                {{$apply-> s6_business_information_dba_value}}
               </div>
             </td>
             <td>List Additional Business Locations
@@ -2002,44 +2014,60 @@
             </td>
           </tr>
           <tr>
-            <td colspan="2" width="35%">Primary Business Address</td>
-            <td colspan="5"></td>
+            <td colspan="2" width="35%">Primary Business Address: {{$apply->
+              s6_business_information_primary_business_address}}</td>
+            <td>{{$apply-> s6_business_information_additional_business_locations1}}</td>
+            <td>{{$apply-> s6_business_information_sq_ft_21}}</td>
+            <td>{{$apply-> s6_business_information_monthly_rent1}}</td>
+            <td>{{$apply-> s6_business_information_lease_expires_date1}}</td>
           </tr>
           <tr>
-            <td colspan="2" width="35%">Primary Contact Name:</td>
-            <td colspan="5"></td>
+            <td colspan="2" width="35%">Primary Contact Name: {{$apply-> s6_business_information_primary_contact_name}}
+            </td>
+            <td>{{$apply-> s6_business_information_additional_business_locations2}}</td>
+            <td>{{$apply-> s6_business_information_sq_ft_22}}</td>
+            <td>{{$apply-> s6_business_information_monthly_rent2}}</td>
+            <td>{{$apply-> s6_business_information_lease_expires_date2}}</td>
           </tr>
           <tr>
-            <td colspan="2" width="35%">Phone #:</td>
-            <td colspan="5"></td>
+            <td colspan="2" width="35%">Phone #: {{$apply-> s6_business_information_phone_number}}</td>
+            <td>{{$apply-> s6_business_information_additional_business_locations3}}</td>
+            <td>{{$apply-> s6_business_information_sq_ft_23}}</td>
+            <td>{{$apply-> s6_business_information_monthly_rent3}}</td>
+            <td>{{$apply-> s6_business_information_lease_expires_date3}}</td>
           </tr>
           <tr>
-            <td colspan="2" width="35%">Fax #:</td>
-            <td colspan="5"></td>
+            <td colspan="2" width="35%">Fax #: {{$apply-> s6_business_information_fax_number}}</td>
+            <td>{{$apply-> s6_business_information_additional_business_locations4}}</td>
+            <td>{{$apply-> s6_business_information_sq_ft_24}}</td>
+            <td>{{$apply-> s6_business_information_monthly_rent4}}</td>
+            <td>{{$apply-> s6_business_information_lease_expires_date4}}</td>
           </tr>
           <tr>
-            <td>Mo. Rent paid at this location: $</td>
-            <td>Sq.Ft.?</td>
-            <td colspan="5" rowspan="7"></td>
+            <td>Mo. Rent paid at this location: {{$apply-> s6_business_information_recent_paid_location}} $</td>
+            <td>Sq.Ft.</td>
+            <td colspan="5">{{$apply-> s6_business_information_sq_ft}}</td>
           </tr>
           <tr>
-            <td>Lease Expires:</td>
+            <td>Lease Expires: {{$apply-> s6_business_information_lease_expires}}</td>
             <td>Mo/Mo?</td>
+            <td colspan="5">{{$apply-> s6_business_information_mo_mo}}</td>
           </tr>
           <tr>
-            <td colspan="2">Business Tax ID #:</td>
+            <td colspan="2">Business Tax ID #: {{$apply-> s6_business_information_tax_id}}</td>
           </tr>
           <tr>
-            <td colspan="2">E-Mail Address:</td>
+            <td colspan="2">E-Mail Address: {{$apply-> s6_business_information_email_address}}</td>
           </tr>
           <tr>
-            <td colspan="2">Number of Employees:</td>
+            <td colspan="2">Number of Employees: {{$apply-> s6_business_information_employee_number}}</td>
           </tr>
           <tr>
-            <td colspan="2">Date Business Established:</td>
+            <td colspan="2">Date Business Established: {{$apply-> s6_business_information_business_date_established}}
+            </td>
           </tr>
           <tr>
-            <td colspan="2">Web Site:</td>
+            <td colspan="2">Web Site: {{$apply-> s6_business_information_web_site}}</td>
           </tr>
         </tbody>
       </table>
@@ -2078,13 +2106,13 @@
     <div>
       <p>Nature of Business</p>
       <div style="height: 20px;">
-
+        {{$apply-> s6_history_nature_of_business}}
       </div>
       <div style="height: 2px;" class="bg-dark"></div>
 
       <p class="mt-1">Types of Products / Services as percentage of total revenue</p>
       <div style="height: 20px;">
-
+        {{$apply-> s6_history_type_of_products}}
       </div>
       <div style="height: 2px;" class="bg-dark"></div>
     </div>
@@ -2094,19 +2122,25 @@
         Explain what factors have affected your trends:</p>
       <div class="d-flex mt-2 ms-5">
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="C-Increasing">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="C-Increasing" @if
+            ($client->s6_history_factors)
+          checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="C-Increasing">
             Increasing
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="S-Decreasing">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="S-Decreasing" @if
+            ($client->s6_history_factors)
+          checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="S-Decreasing">
             Decreasing
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="Stable">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="Stable" @if ($client->s6_history_factors)
+          checked
+          @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="Stable">
             Stable
           </label>
@@ -2120,19 +2154,24 @@
         Explain what factors have affected your trends:</p>
       <div class="d-flex mt-2 ms-5">
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="C-Increasing">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="C-Increasing" @if
+            ($client->s6_history_trends)
+          checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="Increasing">
             Increasing
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="S-Decreasing">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="S-Decreasing" @if
+            ($client->s6_history_trends)
+          checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="Decreasing">
             Decreasing
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input ms-3" type="checkbox" value="" id="SStable">
+          <input class="form-check-input ms-3" type="checkbox" value="" id="SStable" @if ($client->s6_history_trends)
+          checked @endif>
           <label style="margin-top: 1px;" class="form-check-label ms-1" for="SStable">
             Stable
           </label>
@@ -2268,49 +2307,65 @@
 
       <div style="font-size: 14px;">
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="contract">
+          <input class="form-check-input" type="checkbox" value="" id="contract" @if
+            ($client->s6_documents_additionally_purchase_contract) checked
+          @endif>
           <label class="form-check-label" for="contract">
             Fully executed purchase contract; if applicable
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="report">
+          <input class="form-check-input" type="checkbox" value="" id="report" @if
+            ($client->s6_documents_additionally_credit_report) checked
+          @endif>
           <label class="form-check-label" for="report">
             Tri-merge credit report.
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="dated">
+          <input class="form-check-input" type="checkbox" value="" id="dated" @if
+            ($client->s6_documents_additionally_dscr) checked
+          @endif>
           <label class="form-check-label" for="dated">
             DSCR worksheet - signed and dated.
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Disclosure">
+          <input class="form-check-input" type="checkbox" value="" id="Disclosure" @if
+            ($client->s6_documents_additionally_environmental_disclosure) checked
+          @endif>
           <label class="form-check-label" for="Disclosure">
             Environmental Disclosure - signed and dated.
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="signed">
+          <input class="form-check-input" type="checkbox" value="" id="signed" @if
+            ($client->s6_documents_additionally_structural_disclosure) checked
+          @endif>
           <label class="form-check-label" for="signed">
             Structural Disclosure - signed and dated.
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="history">
+          <input class="form-check-input" type="checkbox" value="" id="history" @if
+            ($client->s6_documents_additionally_rental_or_mortgage) checked
+          @endif>
           <label class="form-check-label" for="history">
             Rental or mortgage history. 12 months cancelled checks or bank statements evidencing payment history.
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="license">
+          <input class="form-check-input" type="checkbox" value="" id="license" @if
+            ($client->s6_documents_additionally_business_license) checked
+          @endif>
           <label class="form-check-label" for="license">
             Evidence of being in business for 2 years and business license.
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="Photos">
+          <input class="form-check-input" type="checkbox" value="" id="Photos" @if
+            ($client->s6_documents_additionally_subject_property) checked
+          @endif>
           <label class="form-check-label" for="Photos">
             Photos of subject property.
           </label>
@@ -2350,7 +2405,8 @@
 
     <div>
       <p>
-        I/We authorize_____________________and/or assigns to make inquiries as necessary to verify the accuracy of the
+        I/We authorize {{$apply->s7_authorization_agreement}} and/or assigns to make inquiries as necessary to verify
+        the accuracy of the
         statements made in this application and to determine my/our creditworthiness. I/We authorize and instruct any
         person or consumer reporting agency to
         compile and furnish any information it may have or obtain in response to such credit inquiries. I/We certify the
@@ -2375,7 +2431,7 @@
             </td>
             <td>Date
               <div style="height: 30px;">
-
+                {{$apply->s7_acknowledgement_borrower_signature_date}}
               </div>
             </td>
             <td width="30%">Co-Borrower’s Signature
@@ -2385,7 +2441,7 @@
             </td>
             <td>Date
               <div style="height: 30px;">
-
+                {{$apply->s7_acknowledgement_co_borrower_signature_date}}
               </div>
             </td>
           </tr>
@@ -2417,7 +2473,8 @@
             <td width="50%">
               <span class="me-3 fs-7 fw-bold">BORROWER</span>
               <div class="form-check ms-3">
-                <input class="form-check-input" type="checkbox" value="" id="furnish">
+                <input class="form-check-input" type="checkbox" value="" id="furnish" @if ($client->s7_borrower_continue)
+                checked @endif>
                 <label style="margin-top: 1px;" class="form-check-label" for="furnish">
                   I do not wish to furnish this information
                 </label>
@@ -2426,7 +2483,8 @@
             <td width="50%">
               <span class="me-3 fs-7 fw-bold">CO-BORROWER</span>
               <div class="form-check ms-3">
-                <input class="form-check-input" type="checkbox" value="" id="furnish">
+                <input class="form-check-input" type="checkbox" value="" id="furnish" @if ($client->s7_co_borrower_continue)
+                checked @endif>
                 <label style="margin-top: 1px;" class="form-check-label" for="furnish">
                   I do not wish to furnish this information
                 </label>
@@ -2439,13 +2497,15 @@
               <span class="me-3 fs-7 fw-bold">Ethnicity:</span>
               <div class="d-flex">
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Hispanic">
+                  <input class="form-check-input" type="checkbox" value="" id="Hispanic" @if ($client->s7_borrower_ethnicity)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Hispanic">
                     Hispanic or Latino
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Not Hispanic">
+                  <input class="form-check-input" type="checkbox" value="" id="Not Hispanic" @if
+                    ($client->s7_borrower_ethnicity) checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Not Hispanic">
                     Not Hispanic or Latino
                   </label>
@@ -2456,13 +2516,15 @@
               <span class="me-3 fs-7 fw-bold">Ethnicity:</span>
               <div class="d-flex">
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Latino">
+                  <input class="form-check-input" type="checkbox" value="" id="Latino" @if ($client->s7_co_borrower_co_ethnicity)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Latino">
                     Hispanic or Latino
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Latinon">
+                  <input class="form-check-input" type="checkbox" value="" id="Latinon" @if ($client->s7_co_borrower_co_ethnicity)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Latinon">
                     Not Hispanic or Latino
                   </label>
@@ -2475,34 +2537,39 @@
               <span class="me-3 fs-7 fw-bold">Race:</span>
               <div class="">
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="American">
+                  <input class="form-check-input" type="checkbox" value="" id="American" @if ($client->s7_borrower_race)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="American">
                     American Indian or
                     Alaska Native
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Asian">
+                  <input class="form-check-input" type="checkbox" value="" id="Asian" @if ($client->s7_borrower_race)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Asian">
                     Asian
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Black">
+                  <input class="form-check-input" type="checkbox" value="" id="Black" @if ($client->s7_borrower_race)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Black">
                     Black or
                     African American
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Hawaiian">
+                  <input class="form-check-input" type="checkbox" value="" id="Hawaiian" @if ($client->s7_borrower_race)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Hawaiian">
                     Native Hawaiian or
                     Other Pacific Islander
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="White">
+                  <input class="form-check-input" type="checkbox" value="" id="White" @if ($client->s7_borrower_race)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="White">
                     White
                   </label>
@@ -2513,34 +2580,39 @@
               <span class="me-3 fs-7 fw-bold">Race:</span>
               <div class="">
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="American">
+                  <input class="form-check-input" type="checkbox" value="" id="American" @if ($client->s7_co_borrower_co_race)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="American">
                     American Indian or
                     Alaska Native
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Asian">
+                  <input class="form-check-input" type="checkbox" value="" id="Asian" @if ($client->s7_co_borrower_co_race)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Asian">
                     Asian
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Black">
+                  <input class="form-check-input" type="checkbox" value="" id="Black" @if ($client->s7_co_borrower_co_race)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Black">
                     Black or
                     African American
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Hawaiian">
+                  <input class="form-check-input" type="checkbox" value="" id="Hawaiian" @if ($client->s7_co_borrower_co_race)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Hawaiian">
                     Native Hawaiian or
                     Other Pacific Islander
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="White">
+                  <input class="form-check-input" type="checkbox" value="" id="White" @if ($client->s7_co_borrower_co_race)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="White">
                     White
                   </label>
@@ -2553,13 +2625,15 @@
               <span class="me-3 fs-7 fw-bold">Sex:</span>
               <div class="d-flex">
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Male">
+                  <input class="form-check-input" type="checkbox" value="" id="Male" @if ($client->s7_borrower_sex)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Male">
                     Male
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Female">
+                  <input class="form-check-input" type="checkbox" value="" id="Female" @if ($client->s7_borrower_sex)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Female">
                     Female
                   </label>
@@ -2570,13 +2644,15 @@
               <span class="me-3 fs-7 fw-bold">Sex:</span>
               <div class="d-flex">
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Male">
+                  <input class="form-check-input" type="checkbox" value="" id="Male" @if ($client->s7_co_borrower_co_sex)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Male">
                     Male
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Female">
+                  <input class="form-check-input" type="checkbox" value="" id="Female" @if ($client->s7_co_borrower_co_sex)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Female">
                     Female
                   </label>
@@ -2598,25 +2674,29 @@
               <span>This application was taken by:</span>
               <div class="">
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="interview">
+                  <input class="form-check-input" type="checkbox" value="" id="interview" @if ($client->s7_interviewer_application_taken)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="interview">
                     Face-to-face interview
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Mail">
+                  <input class="form-check-input" type="checkbox" value="" id="Mail" @if ($client->s7_interviewer_application_taken)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Mail">
                     Mail
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Telephone">
+                  <input class="form-check-input" type="checkbox" value="" id="Telephone" @if ($client->s7_interviewer_application_taken)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Telephone">
                     Telephone
                   </label>
                 </div>
                 <div class="form-check ms-3">
-                  <input class="form-check-input" type="checkbox" value="" id="Internet">
+                  <input class="form-check-input" type="checkbox" value="" id="Internet" @if ($client->s7_interviewer_application_taken)
+                  checked @endif>
                   <label style="margin-top: 1px;" class="form-check-label" for="Internet">
                     Internet
                   </label>
@@ -2626,13 +2706,13 @@
             <td>
               <p>Interviewer’s Name (print or type)</p>
               <div style="height: 10px;">
-
+                {{$apply->s7_interviewer_name}}
               </div>
             </td>
             <td rowspan="3">
               <p>Name and Address of Interviewer’s Employer</p>
               <div style="height: 110px;">
-
+                {{$apply->s7_interviewer_name_address}}
               </div>
             </td>
           </tr>
@@ -2640,12 +2720,12 @@
             <td>
               Interviewer’s Signature
               <br>
-              Date
+              Date: {{$apply->s7_interviewer_signature_date}}
             </td>
           </tr>
           <tr>
             <td>
-              Interviewer’s Phone Number (incl. area code)
+              Interviewer’s Phone Number (incl. area code): {{$apply->s7_interviewer_phone_number}}
             </td>
           </tr>
         </tbody>
